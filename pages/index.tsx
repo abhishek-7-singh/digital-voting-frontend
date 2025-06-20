@@ -1,10 +1,11 @@
 
 // import { useRouter } from 'next/router';
 // import { useEffect } from 'react';
+// import Footer from '../components/layout/Footer';
 
 // export default function Home() {
 //   return (
-//     <div className="relative min-h-screen">
+//     <div className="relative min-h-screen flex flex-col">
 //       {/* Background Image */}
 //       <div
 //         className="absolute inset-0 bg-cover bg-center opacity-[0.20] z-0"
@@ -14,7 +15,7 @@
 //       ></div>
 
 //       {/* Main Content */}
-//       <div className="relative z-10">
+//       <div className="relative z-10 flex-grow">
 //         <div className="max-w-[1000px] mx-auto pt-32">
 //           <h1 className="text-4xl font-bold text-center">
 //             India&apos;s Best Digital Voting System
@@ -25,10 +26,7 @@
 //           </p>
 
 //           <div className="flex justify-center mt-8 gap-x-2 text-primary text-sm font-medium">
-//             <a
-//               className="block px-6 py-2 border-2 border-primary"
-//               href="/register"
-//             >
+//             <a className="block px-6 py-2 border-2 border-primary" href="/register">
 //               Register
 //             </a>
 //             <a className="block px-6 py-2 border-2 border-primary" href="/login">
@@ -44,13 +42,17 @@
 //           21MIS1096 - ABHISHEK SINGH
 //         </p>
 //       </div>
-//       <Footer/>
+
+//       <Footer />
 //     </div>
 //   );
 // }
+
+
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import Footer from '../components/layout/Footer';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -75,12 +77,12 @@ export default function Home() {
           </p>
 
           <div className="flex justify-center mt-8 gap-x-2 text-primary text-sm font-medium">
-            <a className="block px-6 py-2 border-2 border-primary" href="/register">
+            <Link className="block px-6 py-2 border-2 border-primary" href="/register">
               Register
-            </a>
-            <a className="block px-6 py-2 border-2 border-primary" href="/login">
+            </Link>
+            <Link className="block px-6 py-2 border-2 border-primary" href="/login">
               Login
-            </a>
+            </Link>
           </div>
         </div>
 

@@ -1,6 +1,7 @@
 
 import { VoterLoginResponse } from '@/pages/login';
 import useUserStore from '@/store/user-store';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 
@@ -23,9 +24,9 @@ const Header = () => {
         </div>
 
         <div className="flex gap-x-2 text-white text-sm font-medium relative">
-          <a className="block px-6 py-2 border-2 border-white" href="/">
+          <Link className="block px-6 py-2 border-2 border-white" href="/">
             Home
-          </a>
+          </Link>
 
           {/* Dropdown fully stable */}
           <div className="relative group">
@@ -71,15 +72,15 @@ const Header = () => {
 
           {!token ? (
             <>
-              <a className="block px-6 py-2 border-2 border-white" href="/register">
+              <Link className="block px-6 py-2 border-2 border-white" href="/register">
                 Register
-              </a>
-              <a className="block px-6 py-2 border-2 border-white" href="/login">
+              </Link>
+              <Link className="block px-6 py-2 border-2 border-white" href="/login">
                 Voter Login
-              </a>
-              <a className="block px-6 py-2 border-2 border-white" href="/login">
+              </Link>
+              <Link className="block px-6 py-2 border-2 border-white" href="/login">
                 Admin Login
-              </a>
+              </Link>
             </>
           ) : (
             <>

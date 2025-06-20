@@ -51,9 +51,9 @@ const LoginPage = () => {
       
       {/* Faded Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center opacity-[0.15] z-0"
+        className="absolute inset-0 bg-cover bg-center opacity-[0.3] z-0"
         style={{
-          backgroundImage: "url('/360_F_255367453_h4QrW8WqQE1VV4bI8tp1qP8ZoPIvEMCl.jpg')",
+          backgroundImage: "url('/photu.jpg')"
         }}
       ></div>
 
