@@ -1,38 +1,85 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🔵 Backend (digital-voting-backend)
 
-## Getting Started
+# 🔖 Author - Abhishek Singh
+## Vellore Institute of Technology, Chennai
 
-First, run the development server:
+# Digital Voting Backend
+
+This is the backend server for the Digital Voting System built using Node.js, Express.js, MongoDB and Cloudinary.
+
+## 🛠 Technologies Used
+
+- Node.js
+- Express.js
+- MongoDB (Mongoose)
+- JWT (Authentication)
+- Cloudinary (Document Storage)
+- Multer (File Uploads)
+- CORS
+- dotenv
+
+## 🔐 Features
+
+- Voter Registration with document upload
+- Admin Registration
+- Login (Voter/Admin) using JWT-based authentication
+- Secure document storage in Cloudinary
+- Voting and Candidate Management
+- Protected routes for admin and voters
+
+---
+
+## 🔧 Setup Instructions
+
+### 1️⃣ Clone Repository
 
 ```bash
+git clone https://github.com/abhishek-7-singh/digital-voting-backend.git
+cd digital-voting-backend
+2️⃣ Install Dependencies
+bash
+Copy
+Edit
+npm install
+3️⃣ Environment Variables
+Create a .env file in the root directory and add:
+
+env
+Copy
+Edit
+MONGO_URI=your-mongodb-uri
+PORT=7001
+JWT_SECRET=your-secret-key
+
+NODE_ENV=development
+
+CLOUD_NAME=your-cloudinary-cloud-name
+CLOUDINARY_API_KEY=your-cloudinary-api-key
+CLOUDINARY_API_SECRET=your-cloudinary-api-secret
+4️⃣ Run Locally
+bash
+Copy
+Edit
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Backend runs on:
+http://localhost:7001/
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🚀 Deployment
+Backend deployed on Render:
+https://digital-voting-backend.onrender.com
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+📁 Project Structure
+arduino
+Copy
+Edit
+.
+├── config/
+├── controllers/
+├── middleware/
+├── models/
+├── routes/
+├── utils/
+├── server.js
+└── .env
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
