@@ -1,7 +1,7 @@
 # Digital Voting Frontend
 
 This is the frontend web application for Digital Voting System built with Next.js 13 and TypeScript.
-# Website link: [https://digital-voting-frontend.vercel.app/](https://digital-voting-frontend-krfh1qjf8.vercel.app/)
+# Website link: https://digital-voting-frontend-i49rpwmk6.vercel.app/
 # 🔖 Author
 # **Abhishek Singh**  
 # Vellore Institute of Technology, Chennai
