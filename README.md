@@ -1,31 +1,31 @@
-# 🔵 Backend (digital-voting-backend)
+# Digital Voting Frontend
 
-# 🔖 Author - Abhishek Singh
-## Vellore Institute of Technology, Chennai
+This is the frontend web application for Digital Voting System built with Next.js 13 and TypeScript.
 
-# Digital Voting Backend
-
-This is the backend server for the Digital Voting System built using Node.js, Express.js, MongoDB and Cloudinary.
+# 🔖 Author
+# **Abhishek Singh**  
+# Vellore Institute of Technology, Chennai
 
 ## 🛠 Technologies Used
 
-- Node.js
-- Express.js
-- MongoDB (Mongoose)
-- JWT (Authentication)
-- Cloudinary (Document Storage)
-- Multer (File Uploads)
-- CORS
-- dotenv
+- Next.js 13
+- TypeScript
+- Tailwind CSS
+- Zustand (State Management)
+- React Query (Tanstack Query)
+- Axios
+- Cloudinary (Image Upload)
 
-## 🔐 Features
+## 🚀 Features
 
 - Voter Registration with document upload
 - Admin Registration
-- Login (Voter/Admin) using JWT-based authentication
-- Secure document storage in Cloudinary
-- Voting and Candidate Management
-- Protected routes for admin and voters
+- Secure Login for both Voters and Admins
+- Responsive Design with Tailwind CSS
+- Secure API calls with JWT authentication
+- Persistent Login state management
+- Protected routes with conditional rendering
+- Clean UI design
 
 ---
 
@@ -34,52 +34,50 @@ This is the backend server for the Digital Voting System built using Node.js, Ex
 ### 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/abhishek-7-singh/digital-voting-backend.git
-cd digital-voting-backend
-2️⃣ Install Dependencies
-bash
-Copy
-Edit
+git clone https://github.com/abhishek-7-singh/digital-voting-frontend.git
+cd digital-voting-frontend
+```
+
+### 2️⃣ Install Dependencies
+```bash
 npm install
-3️⃣ Environment Variables
-Create a .env file in the root directory and add:
+```
 
-env
-Copy
-Edit
-MONGO_URI=your-mongodb-uri
-PORT=7001
-JWT_SECRET=your-secret-key
+### 3️⃣ Environment Variables
+Create a `.env.local` file in root directory:
 
-NODE_ENV=development
+```env
+NEXT_PUBLIC_BASE_API_URL=https://digital-voting-backend.onrender.com
+```
+*This is your backend URL hosted on Render.*
 
-CLOUD_NAME=your-cloudinary-cloud-name
-CLOUDINARY_API_KEY=your-cloudinary-api-key
-CLOUDINARY_API_SECRET=your-cloudinary-api-secret
-4️⃣ Run Locally
-bash
-Copy
-Edit
+### 4️⃣ Run Locally
+```bash
 npm run dev
-Backend runs on:
-http://localhost:7001/
+```
 
-🚀 Deployment
-Backend deployed on Render:
-https://digital-voting-backend.onrender.com
+Frontend runs on: **http://localhost:3000/**
 
-📁 Project Structure
-arduino
-Copy
-Edit
+## 🏗 Deployment
+Frontend deployed on **Vercel**.
+
+## 📁 Project Structure
+```
 .
-├── config/
-├── controllers/
-├── middleware/
-├── models/
-├── routes/
-├── utils/
-├── server.js
-└── .env
+├── components/     # Reusable React components
+│   ├── forms/     # Form components
+│   └── layout/    # Layout components
+├── hooks/         # Custom React hooks
+│   └── queries/   # React Query hooks
+├── pages/         # Next.js pages
+├── public/        # Static assets
+├── store/         # Zustand store
+├── styles/        # Global styles
+├── utils/         # Utility functions
+└── .env.local     # Environment variables
+```
 
-
+## ⚠ Important Notes
+- Make sure backend server is running and accessible
+- All API requests use `NEXT_PUBLIC_BASE_API_URL` as base URL
+- JWT tokens are stored securely for authentication
